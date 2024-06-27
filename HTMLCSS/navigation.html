@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        ul{
+            list-style-type: none;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            display: inline-block;
+            padding: 10px 16px;
+            text-decoration: none;
+            color: white;
+        }
+        li a:hover{
+            background-color:rgba(99, 94, 94, 0.682);
+        }
+        .dropcon{
+            position: absolute;
+            display:none;
+            padding: 1px 1px;
+            overflow: hidden;
+        }
+        .dropdown:hover .dropcon{
+            display: block;
+            background-color: aliceblue;
+        }
+        .dropcon a{
+            color: black;
+        }
+        .dropcon a:hover{
+            background-color:rgba(99, 94, 94, 0.682);
+        }
+    </style>
+</head>
+<body>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="news">News</a></li>
+            <li class="dropdown">
+                <a href="dp">Dropdown</a>
+                <div class="dropcon">
+                    <a href="link1">link 1</a><br>
+                    <a href="link2">link 2</a><br>
+                    <a href="link3">link 3</a><br>
+                </div>
+            </li>
+        </ul>
+</body>
+</html>

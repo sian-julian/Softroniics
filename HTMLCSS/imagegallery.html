@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imagegallery</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .main {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+      .box {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+      .box img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 800px) {
+        .box {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+      @media screen and (max-width: 800px) {
+        .box {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <img src="konoha.jpg" />
+        <img src="naruto2.jpg" />
+        <img src="op6.jpg" />
+        <img src="vagabond.jpeg" />
+        <img src="itachi.jpg" />
+      </div>
+    
+      <div class="box">
+        <img src="op1.jpg" />
+        <img src="op2.jpg" />
+        <img src="op3.jpg" />
+        <img src="op4.jpg" />
+        <img src="op5.jpg" />
+      </div>
+    </div>
+  </body>
+</html>

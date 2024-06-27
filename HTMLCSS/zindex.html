@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zindex</title>
+    <style>
+        .container{
+            position: relative;
+        }
+        .pool{
+            position: absolute;
+            z-index: 1;
+            height: 60px;  
+            width: 70%;
+            left: 200px;
+            top: 50px;
+                        
+        }
+        .lady{
+            position: absolute;
+            z-index: 2;
+            left: 7%;
+            top: 70px;
+         }
+         .text1{
+            position: absolute;
+            z-index: 2;
+            color:darkmagenta;
+            top: 20%;
+            left: 7%;
+            font-size: medium;
+         }
+         .text2{
+            position: absolute;
+            z-index: 2;
+            color: darkmagenta;
+            top: 470px;
+            left: 7%;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text1">
+        <p>Don't do this, Don't you dare. You will not like it.</p>
+        </div>
+        <div class="pool">
+            <img src="texture.jpeg" width="500px" height="auto">
+        </div>
+        <div class="lady">
+            <img src="portrait.jpg" width="auto" height="400px">
+        </div>
+        <div class="text2">
+            <p>The text is above the image because we have taken the background image, which <br>is taller than the top image out of the document flow and now the only content<br> height that is recognized is the top image that is still statically positioned</p>
+        </div>
+    </div>
+</body>
+</html>
