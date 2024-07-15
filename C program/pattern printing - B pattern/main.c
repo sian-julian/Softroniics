@@ -1,0 +1,33 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int i,j,n=6;
+    
+    for(i=0;i<=n;i++)
+    {
+        for(j=0;j<=3;j++)
+        {
+            if(j==0 && (i<=0 || i<=6))
+            {
+                printf("* ");
+            }
+            else if(j<=2 && i%3==0)
+            {
+                printf("* ");
+            }
+            else if(j==3 && i%3!=0)
+            {
+                printf(" * ");
+            }
+            else
+            {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
