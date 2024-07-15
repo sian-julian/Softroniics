@@ -4,7 +4,7 @@
 int main()
 {
     int i,j;
-    
+    char n='A';
     for(i=0;i<=5;i++) 
     {
         char n='A';
