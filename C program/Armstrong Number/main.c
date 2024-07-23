@@ -4,20 +4,29 @@
 
 int main()
 {
-    int n,sum=0,d,temp;
+    int n,sum=0,d,temp,len=0,e;
     printf("Enter a number:");
     scanf("%d",&n);
     temp=n;
+    e=n;
+    while(temp!=0)
+    {
+        temp=temp/10;
+        len=len + 1;
+    }
     
-        while(temp>0)
+    printf("length:%d\n",len);
+    
+        while(n>0)
         {
-            d=temp%10;
-            sum=sum + pow(d,3);
-            temp=temp/10;
+            d=n%10;
+            sum=sum + pow(d,len);
+            n=n/10;
         }
-        if(sum==n)
+        printf("Sum:%d\n",sum);
+        if(sum==e)
         {
-            printf("%d is an Armstrong number",n); 
+            printf("%d is an Armstrong number",sum); 
         }
         else
         {
